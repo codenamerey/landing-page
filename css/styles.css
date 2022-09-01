@@ -128,7 +128,7 @@ h1 {
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     padding-top: 32px;
 }
 
@@ -151,4 +151,27 @@ h1 {
 .random > p {
     font-size: 32px;
     font-weight: 900;
+}
+
+/*Quote section styling*/
+.quote {
+    display: flex;
+    background: #e5e7eb;
+    color: black;
+    flex-direction: column;
+    padding: 64px 25%;
+}
+
+/*Quote components styling*/
+.quote > p:first-child {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.quote > p:last-child {
+    align-self: flex-end;
+    font-weight: bold;
 }
