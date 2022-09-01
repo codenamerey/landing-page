@@ -214,6 +214,13 @@ h1 {
     font-weight: bold;
 }
 
+/*Footer section styling*/
+
 .footer {
-    
+    align-items: center;
+    background: #1f2937;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    padding: 25px 0;
 }
