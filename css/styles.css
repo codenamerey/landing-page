@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
+:root {
+    --padding-const: 16px 15% 40px 15%;
+}
 
 body {
-    font-family: 'Besley', sans-serif;
+    font-family: 'Roboto',sans-serif;
     padding: 0;
     margin: 0;
     font-size: 24px;
@@ -12,7 +16,7 @@ body {
     align-items: center;
     background: #1f2937;
     display: flex;
-    padding: 16px 64px;
+    padding: var(--padding-const);
     
 }
 
@@ -36,8 +40,58 @@ body {
 }
 
 .header nav ul li a {
+    font-size: 18px;
     font-weight: lighter;
     text-decoration: none;
     margin: 0 16px;
-    color: #f9faf8;
+    color: #e5e7eb;
+}
+
+/*Hero Section*/
+.hero {
+    display: flex;
+    background: #1f2937;
+    gap: 15px;
+    padding: var(--padding-const);
+    padding-bottom: 128px;
+    
+}
+
+/*Hero components styling*/
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro > button {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px 32px;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.image {
+    align-items: center;
+    display: flex;
+    background-color: rgba(255, 255, 255, .5);
+    flex: 1;
+    justify-content: center;
 }
